@@ -90,19 +90,30 @@ class _CheckingsState extends State<Checkings> {
                       // color: Color(0xFFF3B2b4),
                       decoration: BoxDecoration(
                         color: Color(0xFFF3B2b4),
-                        borderRadius: BorderRadius.only(topRight: Radius.circular(40.0),topLeft: Radius.circular(40.0))
+                        borderRadius: BorderRadius.only(topRight: Radius.circular(36.0),topLeft: Radius.circular(36.0))
                       ),
-                      child: ListView.builder(
-                        itemCount: 8,
-                        itemBuilder: (context,index){
-                          return Card(
-                            child: ListTile(
-                              onTap: (){},
-                              title: Text('Netflix'),
-                              subtitle: Text('Sep 14, 5:20pm, New York, NY'),
-                            ),
-                          );
-                        },
+                      child: Padding(
+                        padding: const EdgeInsets.only(top:20.0,left: 5.0,right: 5.0),
+                        child: ListView.builder(
+                          itemCount: 8,
+                          itemBuilder: (context,index){
+                            return Card(
+                              child: ListTile(
+                                onTap: (){
+                                  Navigator.pushNamed(context,'/transactions');
+                                },
+                                title: Text('Netflix'),
+                                subtitle: Text('Sep 14, 5:20pm'),
+                                leading: Icon(Icons.arrow_upward_rounded,color: Colors.green,size: 26,),
+                                trailing: Text('- \$200.00',style: GoogleFonts.inter(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.indigo
+                                ),),
+                              ),
+                            );
+                          },
+                        ),
                       ),
                     ),
                     // Positioned(top: MediaQuery.of(context).size.height ,
