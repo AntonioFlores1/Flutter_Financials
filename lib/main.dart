@@ -7,7 +7,7 @@ import 'package:flutter_financials_app/pages/transactions.dart';
 import 'package:flutter_financials_app/pages/welcomescreen.dart';
 
 void main() => runApp(MaterialApp(
-  initialRoute: '/loginscreen',
+  initialRoute: '/welcomescreen',
   routes: {
     '/' : (context) => Loading(),
     '/welcomescreen': (context) => WelcomeScreen(),

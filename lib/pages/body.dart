@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_financials_app/componets/rounded_button.dart';
 import 'package:flutter_financials_app/pages/background.dart';
+import 'package:flutter_financials_app/pages/loginscreen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
@@ -23,12 +24,16 @@ class Body extends StatelessWidget {
           SizedBox(height: size.height * 0.05),
           RoundedButton(
             text:'LOGIN',
-            press: (){},
+            press: (){Navigator.push(context, MaterialPageRoute(builder: (context){return LoginScreen();
+            },
+            ),
+            );
+            },
           ),
           RoundedButton(
             text:'SIGN UP',
             press: (){},
-            color: Colors.purple[100],
+            color: Colors.deepPurple[100],
             textColor: Colors.black,
           )
         ],
