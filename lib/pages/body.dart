@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_financials_app/Sign%20up/signup_screen.dart';
 import 'package:flutter_financials_app/componets/rounded_button.dart';
 import 'package:flutter_financials_app/pages/background.dart';
 import 'package:flutter_financials_app/pages/loginscreen.dart';
@@ -32,7 +33,11 @@ class Body extends StatelessWidget {
           ),
           RoundedButton(
             text:'SIGN UP',
-            press: (){},
+            press: (){Navigator.push(context, MaterialPageRoute(builder: (context){return SignUpScreen();
+            },
+            ),
+            );
+            },
             color: Colors.deepPurple[100],
             textColor: Colors.black,
           )

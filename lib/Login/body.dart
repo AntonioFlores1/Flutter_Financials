@@ -6,6 +6,7 @@ import 'package:flutter_financials_app/componets/rounded_button.dart';
 import 'package:flutter_financials_app/componets/rounded_input_field.dart';
 import 'package:flutter_financials_app/componets/rounded_password_field.dart';
 import 'package:flutter_financials_app/componets/text_field_container.dart';
+import 'package:flutter_financials_app/pages/checkings.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
@@ -23,9 +24,15 @@ class Body extends StatelessWidget {
     return Background(child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Text('LOGIN',style: GoogleFonts.inter(
+        Text('SIGN IN',style: GoogleFonts.inter(
           fontSize: 20,
-          fontWeight: FontWeight.bold
+          fontWeight: FontWeight.bold,
+          color: Colors.purple[900]
+        ),
+        ),
+        Text('Welcome back, login to get started',style: GoogleFonts.inter(
+            fontSize: 16,
+            color: Colors.black
         ),
         ),
         SizedBox(height: size.height * 0.03,),
@@ -37,7 +44,11 @@ class Body extends StatelessWidget {
         ),
         RoundedButton(
           text:'LOGIN',
-          press: (){},
+          press: (){Navigator.push(context, MaterialPageRoute(builder: (context){return Checkings();
+          },
+          ),
+          );
+          },
         ),
         SizedBox(height: size.height * 0.03,),
         AlreadyHaveAnAccountCheck(
