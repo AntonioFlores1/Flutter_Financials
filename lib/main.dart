@@ -11,8 +11,8 @@ void main() => runApp(MaterialApp(
   routes: {
     '/' : (context) => Loading(),
     '/welcomescreen': (context) => WelcomeScreen(),
-      '/checkings': (context) => Checkings(),
+    '/checkings': (context) => Checkings(),
       '/stocks' : (context) => Stocks(),
       '/transactions': (context) => Transactions(),
-}
+  }
 ));

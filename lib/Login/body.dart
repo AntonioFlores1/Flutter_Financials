@@ -6,12 +6,17 @@ import 'package:flutter_financials_app/componets/rounded_button.dart';
 import 'package:flutter_financials_app/componets/rounded_input_field.dart';
 import 'package:flutter_financials_app/componets/rounded_password_field.dart';
 import 'package:flutter_financials_app/componets/text_field_container.dart';
+import 'package:flutter_financials_app/model/usermodel.dart';
 import 'package:flutter_financials_app/pages/checkings.dart';
+import 'package:flutter_financials_app/pages/loading.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:http/http.dart' as http;
+
 
 
 
 class Body extends StatelessWidget {
+
   final Widget child;
   const Body({
    Key key,
@@ -44,10 +49,17 @@ class Body extends StatelessWidget {
         ),
         RoundedButton(
           text:'LOGIN',
-          press: (){Navigator.push(context, MaterialPageRoute(builder: (context){return Checkings();
+          press: () {Navigator.push(context, MaterialPageRoute(builder: (context){return Loading(userName:'l');
           },
           ),
           );
+
+
+          // print('');
+          // setState((){
+          //   _userToken = user;
+          // });
+            print('magic');
           },
         ),
         SizedBox(height: size.height * 0.03,),

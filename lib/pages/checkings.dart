@@ -1,10 +1,16 @@
+import 'dart:core';
 import 'package:flutter/material.dart';
+import 'package:flutter_financials_app/model/usermodel.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 
 class Checkings extends StatefulWidget {
   @override
   _CheckingsState createState() => _CheckingsState();
 }
+
+
+
 
 class _CheckingsState extends State<Checkings> {
   @override
