@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_financials_app/model/usercontent.dart';
 import 'package:flutter_financials_app/model/usermodel.dart';
+import 'package:flutter_financials_app/network/content.dart';
 import 'package:flutter_financials_app/network/token.dart';
 import 'package:flutter_financials_app/pages/checkings.dart';
+import 'package:flutter_financials_app/webviewer/website.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 
@@ -23,34 +26,40 @@ class _LoadingState extends State<Loading> {
 
   _LoadingState(this. userName);
 
-  void loginVerification(String userName) async {
+  Future<String> loginVerification(String userName) async {
 
     if (userName == null) {
       return null;
     } else {
       try{
-        final UserToken user = await createToken('clientId', 'sec');
+        // Login Credentials go here
+        final UserToken user = await createToken();
         userUpdate = user;
         if (user == null) {
-          print('nahhj');
+          print('User is Null');
         } else {
+          var val = await user.token.accessToken.toString();
           Navigator.push(context, MaterialPageRoute(builder: (context) {return Checkings();},),);
+          return val;
         }
       }
       catch(error){
-        print('in catch ');
+        print('Error $error');
       }
     }
   }
 
-
+  void getData() async {
+    String token = await loginVerification(userName);
+    print('token is $token');
+    String fastlink = await usersContent(token);
+      // Navigator.push(context, MaterialPageRoute(builder: (context){return WebviewSetup(fastLink: fastlink);},),);
+  }
 
   @override
   void initState() {
     super.initState();
-    new Future.delayed(const Duration(seconds: 1), () {
-      loginVerification(userName);
-    });
+    getData();
   }
 
 

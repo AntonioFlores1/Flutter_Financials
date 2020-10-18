@@ -1,0 +1,167 @@
+[
+    {
+      "CONTAINER": "bank",
+      "providerAccountId": 10061753,
+      "accountName": "Business Checking - 4531",
+      "accountStatus": "ACTIVE",
+      "isAsset": true,
+      "aggregationSource": "USER",
+      "id": 10110228,
+      "lastUpdated": "2020-03-26T16:58:08Z",
+      "providerId": "16441",
+      "providerName": "Dag Site",
+      "accountType": "CHECKING",
+      "isManual": false,
+      "createdDate": "2020-03-25T07:46:27Z",
+      "includeInNetWorth": true,
+      "displayedName": "LYDIA",
+      "classification": "SMALL_BUSINESS",
+      "currentBalance": {
+        "amount": 23101.14,
+        "currency": "USD"
+      },
+      "balance": {
+        "amount": 23101.14,
+        "currency": "USD"
+      },
+      "fullAccountNumber": "841739060",
+      "availableBalance": {
+        "amount": 28101.14,
+        "currency": "USD"
+      },
+      "bankTransferCode": [
+        {
+          "id": "011900571",
+          "type": "ROUTING_NUMBER"
+        }
+      ],
+      "accountNumber": "xxxx9060",
+      "dataset": [
+        {
+          "name": "ACCT_PROFILE",
+          "additionalStatus": "LOGIN_IN_PROGRESS",
+          "updateEligibility": "ALLOW_UPDATE",
+          "lastUpdated": "2020-03-26T16:51:57Z",
+          "lastUpdateAttempt": "2020-03-26T16:51:57Z"
+        },
+        {
+          "name": "BASIC_AGG_DATA",
+          "additionalStatus": "LOGIN_IN_PROGRESS",
+          "updateEligibility": "ALLOW_UPDATE",
+          "lastUpdated": "2020-03-26T16:58:09Z",
+          "lastUpdateAttempt": "2020-03-26T16:58:09Z",
+          "nextUpdateScheduled": "2020-03-27T06:44:21Z"
+        }
+      ]
+    },
+    {
+      "CONTAINER": "bank",
+      "providerAccountId": 10061753,
+      "accountName": "Joint Savings - 7159",
+      "accountStatus": "ACTIVE",
+      "isAsset": true,
+      "aggregationSource": "USER",
+      "id": 10110227,
+      "lastUpdated": "2020-03-26T16:58:08Z",
+      "providerId": "16441",
+      "providerName": "Dag Site",
+      "accountType": "SAVINGS",
+      "isManual": false,
+      "createdDate": "2020-03-25T07:46:27Z",
+      "includeInNetWorth": true,
+      "displayedName": "LYDIA",
+      "classification": "PERSONAL",
+      "currentBalance": {
+        "amount": 107678.5,
+        "currency": "USD"
+      },
+      "balance": {
+        "amount": 107678.5,
+        "currency": "USD"
+      },
+      "fullAccountNumber": "232747159",
+      "availableBalance": {
+        "amount": 113332.82,
+        "currency": "USD"
+      },
+      "bankTransferCode": [
+        {
+          "id": "121000358",
+          "type": "ROUTING_NUMBER"
+        }
+      ],
+      "accountNumber": "xxxx7159",
+      "dataset": [
+        {
+          "name": "ACCT_PROFILE",
+          "additionalStatus": "LOGIN_IN_PROGRESS",
+          "updateEligibility": "ALLOW_UPDATE",
+          "lastUpdated": "2020-03-26T16:51:57Z",
+          "lastUpdateAttempt": "2020-03-26T16:51:57Z"
+        },
+        {
+          "name": "BASIC_AGG_DATA",
+          "additionalStatus": "LOGIN_IN_PROGRESS",
+          "updateEligibility": "ALLOW_UPDATE",
+          "lastUpdated": "2020-03-26T16:58:09Z",
+          "lastUpdateAttempt": "2020-03-26T16:58:09Z",
+          "nextUpdateScheduled": "2020-03-27T06:44:21Z"
+        }
+      ]
+    },
+    {
+      "CONTAINER": "bank",
+      "providerAccountId": 10061753,
+      "accountName": "Personal Checking - 9060",
+      "accountStatus": "ACTIVE",
+      "isAsset": true,
+      "aggregationSource": "USER",
+      "id": 10110226,
+      "lastUpdated": "2020-03-26T16:58:08Z",
+      "providerId": "16441",
+      "providerName": "Dag Site",
+      "accountType": "CHECKING",
+      "isManual": false,
+      "createdDate": "2020-03-25T07:46:27Z",
+      "includeInNetWorth": true,
+      "displayedName": "LYDIA",
+      "classification": "PERSONAL",
+      "currentBalance": {
+        "amount": 1400.64,
+        "currency": "USD"
+      },
+      "balance": {
+        "amount": 1400.64,
+        "currency": "USD"
+      },
+      "fullAccountNumber": "841739060",
+      "availableBalance": {
+        "amount": 1185.33,
+        "currency": "USD"
+      },
+      "bankTransferCode": [
+        {
+          "id": "011900571",
+          "type": "ROUTING_NUMBER"
+        }
+      ],
+      "accountNumber": "xxxx9060",
+      "dataset": [
+        {
+          "name": "ACCT_PROFILE",
+          "additionalStatus": "LOGIN_IN_PROGRESS",
+          "updateEligibility": "ALLOW_UPDATE",
+          "lastUpdated": "2020-03-26T16:51:57Z",
+          "lastUpdateAttempt": "2020-03-26T16:51:57Z"
+        },
+        {
+          "name": "BASIC_AGG_DATA",
+          "additionalStatus": "LOGIN_IN_PROGRESS",
+          "updateEligibility": "ALLOW_UPDATE",
+          "lastUpdated": "2020-03-26T16:58:09Z",
+          "lastUpdateAttempt": "2020-03-26T16:58:09Z",
+          "nextUpdateScheduled": "2020-03-27T06:44:21Z"
+        }
+      ]
+    }
+]

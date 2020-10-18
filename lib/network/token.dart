@@ -3,11 +3,11 @@ import 'package:http/http.dart' as http ;
 import 'package:flutter_financials_app/secretfolder/secretkeys.dart';
 
 
-Future<UserToken> createToken(String clientId, String secret ) async {
+Future<UserToken> createToken() async {
 
   SecItem instance = SecItem();
 
-  final String apiUrl = instance.url;
+  final String apiUrl = instance.tokenurl;
 
   final response = await http.post(apiUrl, body: {
     'clientId': instance.id,
@@ -18,9 +18,11 @@ Future<UserToken> createToken(String clientId, String secret ) async {
 
   if (response.statusCode == 201) {
     final String responseString = response.body;
+    print('resp');
     print(responseString);
     return userTokenFromJson(responseString);
   } else {
+    print("Error with response ${response.statusCode}");
     return null;
   }
 }

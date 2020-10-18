@@ -5,10 +5,13 @@ import 'package:flutter_financials_app/componets/rounded_button.dart';
 import 'package:flutter_financials_app/componets/rounded_input_field.dart';
 import 'package:flutter_financials_app/componets/rounded_password_field.dart';
 import 'package:flutter_financials_app/pages/checkings.dart';
+import 'package:flutter_financials_app/pages/loading.dart';
 import 'package:flutter_financials_app/pages/loginscreen.dart';
 import 'package:flutter_financials_app/pages/transactions.dart';
 
 class Body extends StatelessWidget {
+
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -20,7 +23,7 @@ class Body extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 15.0),
           child: RoundedInputField(
-              hintText: 'Your Email',
+              hintText: 'UserName',
               onChanged: (value){},
             ),
         ),
@@ -31,7 +34,7 @@ class Body extends StatelessWidget {
           padding: const EdgeInsets.only(bottom:18.0),
           child: RoundedButton(
             text: 'SIGNUP',
-            press: (){Navigator.push(context, MaterialPageRoute(builder: (context){return Checkings();
+            press: (){Navigator.push(context, MaterialPageRoute(builder: (context){return Loading();
             },
             ),
             );},

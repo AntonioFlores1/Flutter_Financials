@@ -53,13 +53,6 @@ class Body extends StatelessWidget {
           },
           ),
           );
-
-
-          // print('');
-          // setState((){
-          //   _userToken = user;
-          // });
-            print('magic');
           },
         ),
         SizedBox(height: size.height * 0.03,),
