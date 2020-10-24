@@ -2,15 +2,9 @@
 
 A new Flutter application.
 
-## Getting Started
+## Simple Finance
 
-This project is a starting point for a Flutter application.
+Mock Finance banking app for both iOS and Android, powered by Yodlee API
 
-A few resources to get you started if this is your first Flutter project:
+![image](https://user-images.githubusercontent.com/43770391/97064360-48b25080-1573-11eb-9ac2-9e48a1738d80.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
