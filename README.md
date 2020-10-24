@@ -6,4 +6,4 @@ A new Flutter application.
 
 Mock Finance banking app for both iOS and Android, powered by Yodlee API
 
-![Untitled design](https://user-images.githubusercontent.com/43770391/97064409-a0e95280-1573-11eb-8997-cadaba1b30ab.gif)
+![Untitled design (1)](https://user-images.githubusercontent.com/43770391/97064451-f9205480-1573-11eb-9002-c5a4c1c04536.gif)
